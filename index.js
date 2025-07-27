@@ -7,6 +7,17 @@ document.getElementById("menu-icon").addEventListener("click", function () {
   }
 });
 
+// Text Animation Enhancement
+document.addEventListener("DOMContentLoaded", function () {
+  const textAnimation = document.querySelector(".text-animation span");
+  if (textAnimation) {
+    // Force animation restart
+    textAnimation.style.animation = "none";
+    textAnimation.offsetHeight; // Trigger reflow
+    textAnimation.style.animation = null;
+  }
+});
+
 function sendMail() {
   let parms = {
     name: document.getElementById(full_name).value,
@@ -15,6 +26,6 @@ function sendMail() {
     subject: document.getElementById(subject).value,
     message: document.getElementById(message).value,
   };
-  console.log(parms)
+  console.log(parms);
   emailjs.send("service_98elvb9", "template_1kj3k9n", parms).then("email sent");
 }
