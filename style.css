@@ -265,27 +265,24 @@ span {
 
 .text-animation span {
     position: relative;
-}
-
-.text-animation span::before {
-    content: "Backend Developer";
+    display: inline-block;
     color: var(--main-color);
-    animation: words 20s infinite;
     font-weight: 700;
-    text-shadow: 0 0 10px var(1a1a2e);
+    text-shadow: 0 0 10px var(--bg-color);
 }
 
 .text-animation span::after {
     content: "";
-    background-color: var(--bg-color);
     position: absolute;
-    width: calc(100% + 8px);
+    width: 2px;
     height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-    background-color: var(--bg-color);
+    background-color: var(--main-color);
+    right: -12px;
+    animation: cursor 0.6s infinite;
+    box-shadow: 0 0 10px var(--main-color);
 }
+
+/* Replace your commented keyframes with these fixed ones */
 
 @keyframes cursor {
     0%, 50% {
@@ -296,52 +293,7 @@ span {
     }
 }
 
-@keyframes words {
-    0%, 16% {
-        content: "Backend Developer";
-    }
-    17%, 32% {
-        content: "React Developer";
-    }
-    33%, 48% {
-        content: "Spring Developer";
-    }
-    49%, 64% {
-        content: "Full Stack Developer";
-    }
-    65%, 80% {
-        content: "Software Developer";
-    }
-    81%, 100% {
-        content: "Spring Boot Developer";
-    }
-}
 
-@keyframes typing {
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95%{
-        width: 0;
-    }
-     5%, 
-    20%, 
-    25%,
-    40%,
-    45%,
-    60%, 
-    65%,
-    80%, 
-    85% {
-       width: calc(100% + 8px);
-    }
-}
 
 .heading {
     font-size: 8rem;
