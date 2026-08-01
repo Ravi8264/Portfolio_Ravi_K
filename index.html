@@ -15,29 +15,47 @@
     <header class="header">
         <a href="#home" class="logo">Ravi<span>Shankar</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#project">Projects</a>
-            <a href="#testimonial">Testimonials</a>
-            <a href="#contact">Contact</a> 
-        </nav>
+        <div class="nav-wrap">
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Experience</a>
+                <a href="#project">Projects</a>
+                <a href="#testimonial">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="theme-picker">
+                <button type="button" id="theme-btn" class="theme-btn" title="Change theme color" aria-label="Change theme color" aria-expanded="false">
+                    <i class='bx bxs-palette'></i>
+                </button>
+                <div class="theme-panel" id="theme-panel" aria-hidden="true"></div>
+            </div>
+        </div>
     </header>
 
    
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Ravi</span></h1>
-            <h3 class="text-animation">I'm a <span id="typing-text">Full Stack Developer</span></h3>
-        
-                    <p>Hi, I'm Ravi, a passionate Full Stack Developer specializing in Spring Boot, React, and Angular. Currently working as a Software Developer at VersionX, building scalable backend systems and user-friendly applications.</p>
+            <h3 class="text-animation">I'm a <span id="typing-text">Full-Stack Engineer</span></h3>
 
-            
+                    <p>Full-Stack Engineer with 2.5+ years building real-time, event-driven systems in Node.js and TypeScript. At VersionX I own the backend of a school transport &amp; safety platform — <strong>1L+ users</strong>, <strong>50K+ pickup/drop events a day</strong>, and zero data loss on buses that keep dropping signal. Before that, backend at <strong>Jio Platforms</strong> on JioMart.</p>
+
+                    <ul class="contact-strip">
+                        <li><i class='bx bx-map'></i> Bengaluru, India</li>
+                        <li><a href="tel:+918709931070"><i class='bx bx-phone'></i> +91 87099 31070</a></li>
+                        <li><a href="mailto:ravirsk2001@gmail.com"><i class='bx bx-envelope'></i> ravirsk2001@gmail.com</a></li>
+                    </ul>
+
+
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/ravi-shankar-kumar-3a7a3420a/"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/Ravi8264"><i class='bx bxl-github'></i></a>
-                        <a href="mailto:ravicse19.23@gmail.com"><i class='bx bxl-gmail'></i></a> 
-                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.linkedin.com/in/ravi-shankar-kumar-3a7a3420a/" target="_blank" rel="noopener" data-tooltip="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/Ravi8264" target="_blank" rel="noopener" data-tooltip="GitHub" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://leetcode.com/u/Ravi8264/" target="_blank" rel="noopener" data-tooltip="LeetCode" aria-label="LeetCode">
+                            <span class="brand-text">LC</span>
+                        </a>
+                        <a href="https://www.geeksforgeeks.org/profile/ravi48hit" target="_blank" rel="noopener" data-tooltip="GeeksforGeeks" aria-label="GeeksforGeeks"><span class="brand-text">GfG</span></a>
+                        <a href="mailto:ravirsk2001@gmail.com" data-tooltip="Email" aria-label="Email"><i class='bx bxl-gmail'></i></a>
                     </div>
                     
 
@@ -53,8 +71,82 @@
     </section>
 
 
+    <section class="skills" id="skills">
+        <h2 class="heading">Technical <span>Skills</span></h2>
+
+        <div class="globe-wrap">
+            <div class="skill-globe" id="skill-globe" role="img" aria-label="Rotating globe of technologies I work with"></div>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-box">
+                <h4><i class='bx bx-code-alt'></i> Languages</h4>
+                <div class="skill-tags">
+                    <span>JavaScript</span><span>TypeScript</span><span>Java</span><span>Python</span><span>SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class='bx bx-server'></i> Core Backend</h4>
+                <div class="skill-tags">
+                    <span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>Serverless Cloud Functions</span><span>PostgreSQL Stored Procedures</span><span>JWT</span><span>RBAC</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class='bx bx-broadcast'></i> Event-Driven & Real-Time</h4>
+                <div class="skill-tags">
+                    <span>Firebase RTDB Triggers</span><span>Event-Driven Architecture</span><span>FCM Push</span><span>MQTT</span><span>WebSockets</span><span>GPS Streaming</span><span>Geofencing</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class='bx bx-git-merge'></i> Concurrency & Correctness</h4>
+                <div class="skill-tags">
+                    <span>Idempotent State Transitions</span><span>Deduplication Guards</span><span>Conflict Resolution</span><span>Cross-Device Sync</span><span>Race-Condition Handling</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class='bx bx-cloud-download'></i> Offline-First & Sync</h4>
+                <div class="skill-tags">
+                    <span>IndexedDB</span><span>Unsynced Log Merging</span><span>Versioned Insert Pipelines</span><span>Optimistic UI</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class='bx bx-data'></i> Data & Storage</h4>
+                <div class="skill-tags">
+                    <span>PostgreSQL</span><span>MySQL</span><span>Firebase RTDB</span><span>Query Optimization</span><span>Composite Indexing</span><span>Schema Normalization</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class='bx bx-window-alt'></i> Frontend</h4>
+                <div class="skill-tags">
+                    <span>React 19</span><span>Redux</span><span>Lit Web Components</span><span>Tailwind CSS</span><span>Bootstrap</span><span>HTML</span><span>CSS</span><span>IntersectionObserver</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class='bx bx-cloud'></i> Cloud & DevOps</h4>
+                <div class="skill-tags">
+                    <span>Firebase Cloud Functions</span><span>Firebase Storage</span><span>Firebase Hosting</span><span>App Check</span><span>Docker</span><span>CI/CD</span><span>Git</span><span>Postman</span><span>Linux</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class='bx bx-plug'></i> Integrations & Tools</h4>
+                <div class="skill-tags">
+                    <span>PayU (SHA-512)</span><span>MSG91 SMS</span><span>Google Maps API</span><span>NFC/QR</span><span>Native Android/iOS Bridge</span><span>MongoDB</span><span>jsPDF</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="education" id="education">
-        <h2 class="heading">Education & Experience</h2>
+        <h2 class="heading">Experience & Education</h2>
 
         <div class="timeline-items">
             <div class="timeline-item">
@@ -63,9 +155,12 @@
                 <div class="timeline-content">
                     <h3>Software Developer at VersionX</h3>
                     <p>Bengaluru, Karnataka</p>
-                    <p>• Spearheaded the development of a student safety and transport system with 3 interconnected applications using Spring Boot and React, adopted by 50k+ users and supporting over 20k+ daily real-time transactions.</p>
-                    <p>• Designed scalable APIs for School Admin Portal, parent authentication, and Bus Route tracking system with real-time GPS updates and automated notifications.</p>
-                    <p>• Implemented PostgreSQL data models and optimized query performance for handling high-volume transport logs and guardian verifications.</p>
+                    <p>• Backend owner of a School Transport &amp; Safety Platform serving 1L+ users and 50K+ daily pickup/drop events — event-driven trip lifecycle on Firebase RTDB triggers and Node.js Cloud Functions, with PostgreSQL stored procedures as the single source of truth for every state transition.</p>
+                    <p>• Reduced missed pickups by 40% via live GPS streaming across 50+ routes, 1km geofence detection, and conditional FCM / MSG91 SMS alert routing.</p>
+                    <p>• Guaranteed zero data loss on low-connectivity buses through offline-first IndexedDB sync — log merging, conflict resolution on reconnect, and versioned PostgreSQL inserts.</p>
+                    <p>• Built SimpleVeda (EdTech &amp; e-commerce) end-to-end across 20+ modules in React 19, TypeScript and Node.js — PayU with SHA-512 reverse-hash tamper detection, JWT access/refresh rotation, OTP over SMS and email, and Firebase App Check on every API.</p>
+                    <p>• Shipped visitor, mailroom and emergency operations: an SOS engine fanning out MSG91 SMS and MQTT alarm signals to security hardware, plus a mailroom workflow with offline-first sync and optimistic UI.</p>
+                    <p>• Cut a production Firebase RTDB download-cost spike by restructuring sync paths and shrinking listener payloads; resolved 200+ production issues.</p>
                 </div>
             </div>
 
@@ -75,10 +170,9 @@
                 <div class="timeline-content">
                     <h3>Backend Developer at Jio Platforms Limited</h3>
                     <p>Navi Mumbai, Maharashtra</p>
-                    <p>• Asset Management System — Developed using Spring Boot and RPA to manage company assets, improving internal process efficiency by 20%.</p>
-                    <p>• Integrated asynchronous validations and concurrency control in Spring Boot APIs, reducing backend processing time by 30%.</p>
-                    <p>• Optimized PostgreSQL queries through advanced indexing and schema normalization, achieving a 25% performance boost.</p>
-                    <p>• Coupon Management System (JioMart) — Designed scalable backend system for coupon lifecycle management serving 1L+ users, reducing abuse by 30%.</p>
+                    <p>• Coupon Management System (JioMart) — built a scalable, secure Node.js backend for the coupon lifecycle on a platform serving 1L+ users; one-time validation and fraud checks cut abuse by 30%.</p>
+                    <p>• Asset Management System — built a React + Node.js internal tool managing 500+ company assets; asynchronous validations and concurrency control cut backend processing time by 30%, lifted process efficiency 20%, and saved 3+ hours a week of manual tracking.</p>
+                    <p>• Optimized PostgreSQL with advanced indexing and schema normalization for a 25% query-performance gain; refactored API layers for peak-volume reliability.</p>
 
                 </div>
             </div>
@@ -89,7 +183,7 @@
                 <div class="timeline-content">
                     <h3>Mentor at Coding Shuttle</h3>
                     <p>Remote</p>
-                    <p>• Mentored 500+ students in web development technologies including HTML, CSS, JavaScript, React, and Spring Boot, helping them build real-world projects and develop strong coding fundamentals.</p>
+                    <p>• Mentored 500+ students in web development technologies including HTML, CSS, JavaScript, React, and Node.js, helping them build real-world projects and develop strong coding fundamentals.</p>
                     <p>• Conducted weekly code reviews and provided personalized feedback on student projects, ensuring high-quality code standards and best practices implementation.</p>
                     <p>• Led Data Structures & Algorithms sessions, teaching problem-solving techniques and helping students improve their competitive programming skills.</p>
                     <p>• Created comprehensive learning materials and conducted interactive workshops on modern web development frameworks and tools.</p>
@@ -115,35 +209,51 @@
     <section class="projects" id="project">
         <h2 class="heading">Projects</h2>
         <div class="projects-container">
-            <!-- School Safety Transport System -->
+            <!-- School Transport & Safety Platform -->
             <div class="project-box">
                 <div class="project-info">
-                    <h4>School Safety Transport System</h4>
-                    <p>Developed a comprehensive student safety and transport management system with 3 interconnected applications: Parent App (login, guardian management, notifications), Staff App (QR/mobile authentication for child pickup), and Bus Route Management (real-time GPS tracking with stop-wise notifications). Features include real-time GPS tracking, guardian verification, automated notifications, route selection, pickup confirmations, and arrival alerts. Serves 50k+ users with 20k+ daily real-time pickup and drop-off transactions.</p>
+                    <h4>School Transport &amp; Safety Platform</h4>
+                    <p class="project-meta">VersionX &nbsp;|&nbsp; 1L+ users &nbsp;|&nbsp; 50K+ daily events</p>
+                    <p>Backend owner of an event-driven trip lifecycle built on Firebase RTDB triggers and Node.js Cloud Functions, with PostgreSQL stored procedures as the single source of truth for every state transition. Live GPS streaming across 50+ routes with 1km geofence detection and conditional FCM / MSG91 SMS alert routing cut missed pickups by 40%. Offline-first IndexedDB sync — log merging, conflict resolution on reconnect and versioned inserts — guarantees zero data loss on low-connectivity buses, while idempotent state transitions and a 5-minute accidental trip-end guard eliminate duplicate pickups under concurrent multi-device access. Guardian identity is enforced through QR/NFC authentication with encrypted payload verification and multi-relation access control, including an NFC card writer over a native Android/iOS bridge.</p>
+                    <div class="project-tags">
+                        <span>Node.js</span><span>Firebase RTDB</span><span>Cloud Functions</span><span>PostgreSQL</span><span>FCM</span><span>IndexedDB</span><span>NFC/QR</span>
+                    </div>
                 </div>
             </div>
-        
-            <!-- Asset Management System -->
+
+            <!-- SimpleVeda -->
             <div class="project-box">
                 <div class="project-info">
-                    <h4>Asset Management System</h4>
-                    <p>Developed an internal tool using Spring Boot and RPA to manage company assets including laptops, desktops, servers, network equipment, and office furniture. Implemented scalable backend CRUD operations, auto-scaling, and real-time asset tracking with barcode integration. Built comprehensive dashboard for asset lifecycle management, maintenance scheduling, warranty tracking, and cost optimization. Features include asset allocation, return management, depreciation calculation, and audit trails. Improved internal process efficiency by 20% and reduced asset loss by 15%.</p>
+                    <h4>SimpleVeda — EdTech &amp; E-Commerce</h4>
+                    <p class="project-meta">VersionX &nbsp;|&nbsp; 20+ modules, built end-to-end</p>
+                    <p>A full learning-and-commerce platform spanning courses, videos, assignments, shop, cart and community. PayU checkout is hardened with SHA-512 reverse-hash tamper detection and jsPDF invoicing. Authentication runs in two layers: bcrypt hashing, JWT access tokens (1h) with refresh-token rotation (7d) in PostgreSQL, OTP over MSG91 SMS and email, and Google Sign-In cross-matched against Firebase UIDs. Every API sits behind Firebase App Check (reCAPTCHA Enterprise), and the offline-first cart auto-merges anonymous sessions on login, alongside a role-based admin panel with drag-and-drop content management.</p>
+                    <div class="project-tags">
+                        <span>React 19</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span><span>PayU</span><span>Firebase App Check</span><span>JWT</span>
+                    </div>
                 </div>
             </div>
-        
-            <!-- Coupon Management System -->
+
+            <!-- Visitor, Mailroom & Emergency Operations -->
             <div class="project-box">
                 <div class="project-info">
-                    <h4>Coupon Management System (JioMart)</h4>
-                    <p>Designed and implemented a scalable, secure backend system in Spring Boot for coupon lifecycle management across the e-commerce platform serving 1L+ users. Built secure, RESTful APIs with one-time coupon validation logic and fraud-prevention mechanisms. Features include coupon generation, validation, redemption tracking, and analytics. Implemented advanced security measures including rate limiting, IP blocking, and suspicious activity detection. Reduced coupon abuse by 30% and ensured reliable discount application during peak order volumes. Integrated with payment gateways and order management systems for seamless coupon processing.</p>
+                    <h4>Visitor, Mailroom &amp; Emergency Ops</h4>
+                    <p class="project-meta">VersionX &nbsp;|&nbsp; enterprise physical-operations SaaS</p>
+                    <p>An SOS and emergency alert engine that fans out MSG91 SMS broadcasts and MQTT alarm signals to security hardware with site-based routing. The Mailroom Management System models the full parcel workflow (Open → Pending → Given → Received / Discard / Dispute) with staff notifications, offline-first sync with optimistic UI, and PostgreSQL deep-link generation. Paired with a paginated notification feed using IntersectionObserver infinite scroll and IndexedDB deduplication, plus a unified React approval surface spanning visitor, mailroom and gatepass workflows.</p>
+                    <div class="project-tags">
+                        <span>React</span><span>MQTT</span><span>MSG91</span><span>IndexedDB</span><span>PostgreSQL</span>
+                    </div>
                 </div>
             </div>
-        
-            <!-- SwiftRide Project -->
+
+            <!-- SwiftRide -->
             <div class="project-box">
                 <div class="project-info">
-                    <h4>SwiftRide</h4>
-                    <p>Engineered a comprehensive ride-hailing platform using Spring Boot, React, and Angular. Features include real-time GPS tracking, dynamic surge pricing, JWT-based authentication, driver/rider registration, ride booking/cancellation, payment integration, and rating system. Implemented advanced features like ride scheduling, fare estimation, driver location sharing, emergency contacts, and trip history. Built with microservices architecture supporting over 1,000 users with real-time notifications and live chat support.</p>
+                    <h4>SwiftRide — Ride-Hailing Platform</h4>
+                    <p class="project-meta">Personal project &nbsp;|&nbsp; <a href="https://github.com/Ravi8264/UBER-CLONE-BACKEND" target="_blank" rel="noopener">GitHub ↗</a></p>
+                    <p>A ride-hailing backend for 1,000+ users with real-time route tracking, dynamic pricing, driver onboarding, and booking/cancellation flows. Secured with JWT-based authentication and role-separated access control across the rider and driver journeys.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>React</span><span>PostgreSQL</span><span>JWT</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,6 +314,13 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
+
+        <ul class="contact-strip contact-strip-center">
+            <li><a href="tel:+918709931070"><i class='bx bx-phone'></i> +91 87099 31070</a></li>
+            <li><a href="mailto:ravirsk2001@gmail.com"><i class='bx bx-envelope'></i> ravirsk2001@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/ravi-shankar-kumar-3a7a3420a/" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i> LinkedIn</a></li>
+        </ul>
+
         <form id="contact-form">
             <div class="input-group">
                 <div class="input-box">
@@ -226,17 +343,21 @@
 
     <footer class="footer">
         <div class="social">
-            <a href="https://www.linkedin.com/in/ravi-shankar-kumar-3a7a3420a/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Ravi8264"><i class='bx bxl-github'></i></a>
-            <a href="mailto:ravicse19.23@gmail.com"><i class='bx bxl-gmail'></i></a> 
-            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/in/ravi-shankar-kumar-3a7a3420a/" target="_blank" rel="noopener" data-tooltip="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Ravi8264" target="_blank" rel="noopener" data-tooltip="GitHub" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="https://leetcode.com/u/Ravi8264/" target="_blank" rel="noopener" data-tooltip="LeetCode" aria-label="LeetCode">
+                <span class="brand-text">LC</span>
+            </a>
+            <a href="https://www.geeksforgeeks.org/profile/ravi48hit" target="_blank" rel="noopener" data-tooltip="GeeksforGeeks" aria-label="GeeksforGeeks"><span class="brand-text">GfG</span></a>
+            <a href="mailto:ravirsk2001@gmail.com" data-tooltip="Email" aria-label="Email"><i class='bx bxl-gmail'></i></a>
         </div>
 
 
         <ul class="list">
           
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Experience</a></li>
             <li><a href="#project">Projects</a></li>
-            <li><a href="#">About Me</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#testimonial">Testimonials</a></li>
         </ul>
