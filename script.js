@@ -2,7 +2,7 @@
 const typingText = document.getElementById("typing-text");
 const texts = [
   "Full-Stack Engineer",
-  "Node.js Backend Developer",
+  "Spring Boot Backend Developer",
   "React Developer",
   "Real-Time Systems Engineer",
 ];
@@ -44,7 +44,7 @@ function typeText() {
 // hai. Koi library nahi: har tag ek absolutely-positioned span hai jise har
 // frame par rotate ki hui 3D position se transform kiya jaata hai.
 const GLOBE_SKILLS = [
-  "Node.js", "TypeScript", "JavaScript", "React 19", "PostgreSQL",
+  "Spring Boot", "TypeScript", "JavaScript", "React 19", "PostgreSQL",
   "Firebase RTDB", "Cloud Functions", "Express.js", "REST APIs", "JWT",
   "MQTT", "WebSockets", "FCM Push", "IndexedDB", "Redux",
   "Docker", "CI/CD", "Git", "Java", "Python",
