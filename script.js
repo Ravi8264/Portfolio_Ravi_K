@@ -45,7 +45,7 @@ function typeText() {
 // frame par rotate ki hui 3D position se transform kiya jaata hai.
 const GLOBE_SKILLS = [
   "Spring Boot", "TypeScript", "JavaScript", "React 19", "PostgreSQL",
-  "Firebase RTDB", "Cloud Functions", "Express.js", "REST APIs", "JWT",
+  "Firebase RTDB", "AWS Lambda", "Express.js", "REST APIs", "JWT",
   "MQTT", "WebSockets", "FCM Push", "IndexedDB", "Redux",
   "Docker", "CI/CD", "Git", "Java", "Python",
   "SQL", "MySQL", "MongoDB", "Tailwind CSS", "Geofencing",
